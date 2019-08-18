@@ -1,0 +1,140 @@
+/*AntiAimEnable.SetFileId("aa_enable");
+	aagroup.PlaceLabledControl(1, "enable antiaim", this, &AntiAimEnable);
+
+	disable_on_dormant.SetFileId("disable_on_dormant");
+	aagroup.PlaceLabledControl(1, "at targets", this, &disable_on_dormant);
+	AntiAimPitch.SetFileId("aa_x");
+	AntiAimPitch.AddItem("off");
+	AntiAimPitch.AddItem("down");
+	AntiAimPitch.AddItem("up");
+	AntiAimPitch.AddItem("jitter");
+	AntiAimPitch.AddItem("random");
+	//AntiAimPitch.AddItem("zero");
+	aagroup.PlaceLabledControl(1, "pitch", this, &AntiAimPitch);
+
+	AntiAimYaw.SetFileId("aa_y");
+	AntiAimYaw.AddItem("off");
+	AntiAimYaw.AddItem("180");
+	AntiAimYaw.AddItem("manual");
+	AntiAimYaw.AddItem("crooked");
+	AntiAimYaw.AddItem("freestanding");
+	AntiAimYaw.AddItem("jitter 180");
+	AntiAimYaw.AddItem("random lowerbody");
+	//	AntiAimYaw.AddItem("Twist");
+	aagroup.PlaceLabledControl(1, "standing yaw", this, &AntiAimYaw);
+
+	stand_jitter.SetFileId("c_addjitter_stand");
+	stand_jitter.SetBoundaries(0.f, 90.f);
+	stand_jitter.SetValue(0.f);
+	aagroup.PlaceLabledControl(1, "add jitter", this, &stand_jitter);
+
+	AntiAimYawrun.SetFileId("aa_y2");
+	AntiAimYawrun.AddItem("off");
+	AntiAimYawrun.AddItem("180");
+	AntiAimYawrun.AddItem("manual");
+	AntiAimYawrun.AddItem("crooked");
+	AntiAimYawrun.AddItem("freestanding");
+	AntiAimYawrun.AddItem("180 jitter");
+	AntiAimYawrun.AddItem("random lowerbody");
+	aagroup.PlaceLabledControl(1, "moving yaw", this, &AntiAimYawrun);
+
+	move_jitter.SetFileId("c_addjitter_move");
+	move_jitter.SetBoundaries(0.f, 90.f);
+	move_jitter.SetValue(0.f);
+	aagroup.PlaceLabledControl(1, "add jitter", this, &move_jitter);
+
+	AntiAimYaw3.SetFileId("aa_y3");
+	AntiAimYaw3.AddItem("off");
+	AntiAimYaw3.AddItem("180");
+	AntiAimYaw3.AddItem("manual");
+	AntiAimYaw3.AddItem("crooked");
+	AntiAimYaw3.AddItem("freestanding");
+	AntiAimYaw3.AddItem("180 jitter");
+	AntiAimYaw3.AddItem("random lowerbody");
+	aagroup.PlaceLabledControl(1, "jumping yaw", this, &AntiAimYaw3);
+
+	desync_aa_stand.SetFileId("v_desync_aa_stand");
+	aagroup.PlaceLabledControl(1, "standing desync", this, &desync_aa_stand);
+
+	desync_aa_move.SetFileId("v_desync_aa_move");
+	aagroup.PlaceLabledControl(1, "moving desync", this, &desync_aa_move);*/
+
+	//	air_desync.SetFileId("v_air_desync");
+	//	aagroup.PlaceLabledControl(1, "Air Desync", this, &air_desync);
+
+	//	pitch_up.SetFileId("pitch_up");
+	//	aagroup.PlaceLabledControl(1, "Pitch Flick", this, &pitch_up);
+
+
+	//minimal_walk.SetFileId("minimal_walk");
+	//aagroup.PlaceLabledControl(2, "slow motion", this, &minimal_walk);
+
+	//	antilby.SetFileId("otr_meh");
+		//	antilby.AddItem("Off");
+		//	antilby.AddItem("One Flick");
+		//	antilby.AddItem("Two Flicks");
+		//	antilby.AddItem("Relative");
+	//	aagroup.PlaceLabledControl(1, "Anti-LBY", this, &antilby);
+
+		//	BreakLBYDelta2.SetFileId("b_antilby2");
+		//	BreakLBYDelta2.SetBoundaries(-180, 180);
+		//	BreakLBYDelta2.SetValue(90);
+		//	aagroup.PlaceLabledControl(2, "Anti-LBY First Flick", this, &BreakLBYDelta2);
+
+	//	BreakLBYDelta.SetFileId("b_antilby");
+	//	BreakLBYDelta.SetBoundaries(-180, 180);
+	//	BreakLBYDelta.SetValue(-90);
+	//	aagroup.PlaceLabledControl(1, "Anti-LBY Range", this, &BreakLBYDelta);
+
+		//	freerange.SetFileId("freestanding_range");
+		//	freerange.SetBoundaries(0, 90);
+		//	freerange.SetValue(35);
+		//	aagroup.PlaceLabledControl(1, "Freestanding Value", this, &freerange);
+
+		//preset_aa.SetFileId("preset_aa");
+		//aagroup.PlaceLabledControl(1, "Pre-set AntiAim", this, &preset_aa);
+
+		//choked_shot.SetFileId("choke_shot");
+		//aagroup.PlaceLabledControl(1, "Choke Shot", this, &choked_shot);
+		//-<------------------------------------->-//
+	/*FakelagEnab.SetFileId("fakelag_breaklc");
+	aagroup.PlaceLabledControl(2, "enable fakelag", this, &FakelagEnab);
+
+	FakelagStand.SetFileId("fakelag_stand_val");
+	FakelagStand.SetBoundaries(1, 14);
+	FakelagStand.SetValue(1);
+	aagroup.PlaceLabledControl(2, "fakelag standing", this, &FakelagStand);
+
+	FakelagMove.SetFileId("fakelag_move_val");
+	FakelagMove.SetBoundaries(1, 14);
+	FakelagMove.SetValue(1);
+	aagroup.PlaceLabledControl(2, "fakelag moving", this, &FakelagMove);
+
+	Fakelagjump.SetFileId("fakelag_jump_val");
+	Fakelagjump.SetBoundaries(1, 14);
+	Fakelagjump.SetValue(1);
+	aagroup.PlaceLabledControl(2, "fakelag jumping", this, &Fakelagjump);*/
+
+/*	fl_spike.SetFileId("fakelag_spike");
+	fl_spike.AddItem("default");
+	fl_spike.AddItem("enemy sight");
+	fl_spike.AddItem("mirror adaptive");
+	fl_spike.AddItem("aimware adaptive");
+	fl_spike.AddItem("velocity based");
+	aagroup.PlaceLabledControl(2, "fakelag type", this, &fl_spike);
+
+	fakelag_key.SetFileId("fakelag_onkey");
+	aagroup.PlaceLabledControl(2, "fakelag on key", this, &fakelag_key);*/
+
+	//FakelagBreakLC.SetFileId("fakelag_breaklc");
+	//aagroup.PlaceLabledControl(2, "break lag comp", this, &FakelagBreakLC);
+
+
+
+	//	auto_fakelag.SetFileId("fakelag_auto");
+	//	aagroup.PlaceLabledControl(2, "Dynamic Fakelag", this, &auto_fakelag);
+
+	//randlbyr.SetFileId("b_randlbyr");
+	//randlbyr.SetBoundaries(20, 180);
+	//randlbyr.SetValue(60);
+	//aagroup.PlaceLabledControl(3, "Random Lowerbody Ammount", this, &randlbyr);
